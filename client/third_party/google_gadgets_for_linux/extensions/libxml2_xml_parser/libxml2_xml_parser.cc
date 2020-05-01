@@ -470,7 +470,7 @@ std::string GetHTMLCharset(const char* html_content) {
     if (!cursor)
       break;
 
-    if (strncmp(cursor, "<!--", 3) == 0) {
+    if (strncmp(cursor, "<!--", 4) == 0) {
       cursor = strstr(cursor, "-->");
       if (!cursor)
         break;
